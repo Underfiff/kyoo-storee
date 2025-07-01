@@ -5,11 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KyooPremium</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
   <!-- Header -->
-  <header class="flex justify-between items-center px-6 py-4 border-b">
+  <header class="flex justify-between items-center px-6 py-4 border-b animate-fadeIn">
     <div class="text-2xl font-bold">KyooPremium</div>
     <div class="flex items-center gap-2">
       <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -20,26 +29,25 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-20">
+  <section class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-20 animate-fadeIn">
     <div class="max-w-xl">
       <h1 class="text-4xl font-bold mb-4">Premium sat-set Anti Ribet</h1>
       <p class="text-lg text-gray-700 mb-6">
         Kyoo Premium adalah sebuah website yang menyediakan aplikasi premium dan jasa sosmed termurah dan terlengkap
       </p>
-      <<button onclick="window.location.href='/product'" class="bg-gray-900 text-white px-6 py-3 rounded shadow hover:bg-gray-800">
-        Mulai Sekarang
+      <button onclick="window.location.href='/product'" class="bg-gray-900 text-white px-6 py-3 rounded shadow hover:bg-gray-800 transform hover:scale-105 transition duration-300">
+      Mulai Sekarang
       </button>
-      
     </div>
     <div class="mt-12 lg:mt-0">
-      <img src="/img/Premium Vector _ Happy Couple Man and Woman Shopping Together illustration design.jpeg" alt="Shopping Illustration" class="w-full max-w-md" />
+      <img src="/img/Premium Vector _ Happy Couple Man and Woman Shopping Together illustration design.jpeg" alt="Shopping Illustration" class="w-full max-w-md">
     </div>
   </section>
 
   <!-- Fitur Section -->
-  <section class="flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-20 py-20">
+  <section class="flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-20 py-20 animate-fadeIn">
     <div class="mt-10 lg:mt-0">
-      <img src="/img/download (32).jpeg" alt="Feature Illustration" class="w-full max-w-md" />
+      <img src="/img/download (32).jpeg" alt="Feature Illustration" class="w-full max-w-md">
     </div>
     <div class="max-w-xl lg:ml-12">
       <h2 class="text-3xl font-bold mb-4">Produk Berkualitas, Harga Mantap dan Proses Cepat</h2>
@@ -56,49 +64,46 @@
   </section>
 
   <!-- Metode Pembayaran -->
-  <section class="px-6 lg:px-20 py-20 text-center">
+  <section class="px-6 lg:px-20 py-20 text-center animate-fadeIn">
     <h2 class="text-3xl font-bold mb-4">Metode Pembayaran</h2>
     <p class="text-gray-700 mb-10">
       Kami menyediakan bermacam metode pembayaran yang bisa kamu pilih sesuai keinginanmu.
     </p>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
-      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition">
-        <img src="/img/qris.png" alt="QRIS" class="h-10" />
+      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition transform hover:scale-105">
+        <img src="/img/qris.png" alt="QRIS" class="h-10">
       </div>
-      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition">
-        <img src="/img/dana.png" alt="Dana" class="h-10" />
+      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition transform hover:scale-105">
+        <img src="/img/dana.png" alt="Dana" class="h-10">
       </div>
-      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition">
-        <img src="/img/GoPay Logo.jpeg" alt="Gopay" class="h-10 object-contain" />
+      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition transform hover:scale-105">
+        <img src="/img/GoPay Logo.jpeg" alt="Gopay" class="h-10 object-contain">
       </div>
-      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition">
-        <img src="/img/ovo.jpg" alt="OVO" class="h-10 object-contain" />
+      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition transform hover:scale-105">
+        <img src="/img/ovo.jpg" alt="OVO" class="h-10 object-contain">
       </div>
-      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition">
-        <img src="/img/download (34).jpeg" alt="ShopeePay" class="h-10 object-contain" />
+      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition transform hover:scale-105">
+        <img src="/img/download (34).jpeg" alt="ShopeePay" class="h-10 object-contain">
       </div>
-      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition">
-        <img src="/img/BNI.webp" alt="BNI" class="h-10 object-contain" />
+      <div class="border rounded-xl p-6 w-full flex items-center justify-center shadow-sm hover:shadow-md transition transform hover:scale-105">
+        <img src="/img/BNI.webp" alt="BNI" class="h-10 object-contain">
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white py-20">
-    <div class="max-w-6xl mx-auto px-6 pb-10 relative rounded-xl overflow-hidden" style="background-image: url('/img/download\ \(36\).jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+  <footer class="bg-white py-20 animate-fadeIn">
+    <div class="max-w-6xl mx-auto px-6 pb-10 relative rounded-xl overflow-hidden" style="background-image: url('/img/download (36).jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
       <div class="relative z-10 text-center py-10 px-4">
         <h3 class="text-sm text-gray-700 font-medium">KYOOPREMIUM</h3>
         <h2 class="text-2xl md:text-3xl font-bold text-gray-900 my-2">Langganan Premium Gak Harus Mahal</h2>
-        <button onclick="window.location.href='/product'" class="bg-gray-900 text-white px-6 py-3 rounded shadow hover:bg-gray-800">
+        <button onclick="window.location.href='/product'" class="bg-gray-900 text-white px-6 py-3 rounded shadow hover:bg-gray-800 transform hover:scale-105 transition duration-300">
           Mulai Sekarang
         </button>
-        
       </div>
       <div class="absolute inset-0 bg-white opacity-50"></div>
     </div>
   </footer>
 
 </body>
-
-
 </html>

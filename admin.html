@@ -5,28 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin Panel - KyooPremium</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 0.8s ease-out both;
+    }
+    .btn {
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-50 text-gray-900 font-sans">
 
   <!-- Header Admin -->
-  <header class="flex justify-between items-center px-6 py-4 bg-white shadow">
-    <h1 class="text-2xl font-bold">Admin Panel - KyooPremium</h1>
-    <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Logout</button>
+  <header class="flex justify-between items-center px-6 py-4 bg-white shadow fade-in">
+    <h1 class="text-2xl font-bold text-gray-800">Admin Panel - KyooPremium</h1>
+    <button class="btn bg-red-500 text-white px-4 py-2 rounded shadow hover:bg-red-600">Logout</button>
   </header>
 
-  <!-- Konten -->
-  <main class="max-w-6xl mx-auto px-6 py-10">
+  <!-- Konten Utama -->
+  <main class="max-w-7xl mx-auto px-6 py-10 fade-in">
     
-    <!-- Tombol Tambah Produk -->
-    <div class="flex justify-between items-center mb-6">
-      <h2 class="text-xl font-semibold">Daftar Produk</h2>
-      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">+ Tambah Produk</button>
+    <!-- Bagian Atas -->
+    <div class="flex justify-between items-center mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800">📦 Daftar Produk</h2>
+      <button class="btn bg-blue-600 text-white px-5 py-2 rounded shadow hover:bg-blue-700">+ Tambah Produk</button>
     </div>
 
     <!-- Tabel Produk -->
-    <div class="overflow-x-auto bg-white rounded shadow">
+    <div class="overflow-x-auto bg-white rounded-xl shadow-lg fade-in">
       <table class="min-w-full text-left">
-        <thead class="bg-gray-200">
+        <thead class="bg-blue-100 text-gray-700">
           <tr>
             <th class="py-3 px-4">No</th>
             <th class="py-3 px-4">Gambar</th>
@@ -37,72 +52,69 @@
             <th class="py-3 px-4">Aksi</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="text-gray-800">
+
           <!-- Produk 1 -->
-          <tr class="border-b">
+          <tr class="border-b hover:bg-gray-50 transition">
             <td class="py-3 px-4">1</td>
             <td class="py-3 px-4">
-              <img src="/img/crunch.png" alt="Crunchyroll" class="h-12 w-12 object-contain">
-             
+              <img src="/img/crunch.png" alt="Crunchyroll" class="h-12 w-12 object-contain rounded">
             </td>
             <td class="py-3 px-4">Crunchyroll</td>
             <td class="py-3 px-4">Streaming Apps</td>
             <td class="py-3 px-4">Rp 10.000</td>
-            <td class="py-3 px-4 text-green-600">Tersedia</td>
-            <td class="py-3 px-4 space-x-1">
-              <button class="bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
-              <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
+            <td class="py-3 px-4 text-green-600 font-semibold">Tersedia</td>
+            <td class="py-3 px-4 space-x-2">
+              <button class="btn bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
+              <button class="btn bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
             </td>
           </tr>
 
           <!-- Produk 2 -->
-          <tr class="border-b">
+          <tr class="border-b hover:bg-gray-50 transition">
             <td class="py-3 px-4">2</td>
             <td class="py-3 px-4">
-              <img src="/img/netflix.png" alt="Netflix" class="h-12 w-12 object-contain">
-              
+              <img src="/img/netflix.png" alt="Netflix" class="h-12 w-12 object-contain rounded">
             </td>
             <td class="py-3 px-4">Netflix</td>
             <td class="py-3 px-4">Streaming Apps</td>
             <td class="py-3 px-4">Rp 40.000</td>
-            <td class="py-3 px-4 text-red-600">Habis</td>
-            <td class="py-3 px-4 space-x-1">
-              <button class="bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
-              <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
+            <td class="py-3 px-4 text-red-600 font-semibold">Habis</td>
+            <td class="py-3 px-4 space-x-2">
+              <button class="btn bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
+              <button class="btn bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
             </td>
           </tr>
 
           <!-- Produk 3 -->
-          <tr class="border-b">
+          <tr class="border-b hover:bg-gray-50 transition">
             <td class="py-3 px-4">3</td>
             <td class="py-3 px-4">
-              <img src="/img/movie box.png" alt="Movie Box" class="h-12 w-12 object-contain">
-              
+              <img src="/img/movie box.png" alt="Movie Box" class="h-12 w-12 object-contain rounded">
             </td>
             <td class="py-3 px-4">Movie Box</td>
             <td class="py-3 px-4">Streaming Apps</td>
             <td class="py-3 px-4">Rp 6.000</td>
-            <td class="py-3 px-4 text-green-600">Tersedia</td>
-            <td class="py-3 px-4 space-x-1">
-              <button class="bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
-              <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
+            <td class="py-3 px-4 text-green-600 font-semibold">Tersedia</td>
+            <td class="py-3 px-4 space-x-2">
+              <button class="btn bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
+              <button class="btn bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
             </td>
           </tr>
 
           <!-- Produk 4 -->
-          <tr class="border-b">
+          <tr class="hover:bg-gray-50 transition">
             <td class="py-3 px-4">4</td>
             <td class="py-3 px-4">
-              <img src="/img/prime.webp" alt="Prime Video" class="h-12 w-12 object-contain">
-            
+              <img src="/img/prime.webp" alt="Prime Video" class="h-12 w-12 object-contain rounded">
             </td>
             <td class="py-3 px-4">Prime Video</td>
             <td class="py-3 px-4">Streaming Apps</td>
             <td class="py-3 px-4">Rp 15.000</td>
-            <td class="py-3 px-4 text-red-600">Habis</td>
-            <td class="py-3 px-4 space-x-1">
-              <button class="bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
-              <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
+            <td class="py-3 px-4 text-red-600 font-semibold">Habis</td>
+            <td class="py-3 px-4 space-x-2">
+              <button class="btn bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
+              <button class="btn bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
             </td>
           </tr>
 
