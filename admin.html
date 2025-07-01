@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - KyooPremium</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <!-- Header Admin -->
+  <header class="flex justify-between items-center px-6 py-4 bg-white shadow">
+    <h1 class="text-2xl font-bold">Admin Panel - KyooPremium</h1>
+    <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Logout</button>
+  </header>
+
+  <!-- Konten -->
+  <main class="max-w-6xl mx-auto px-6 py-10">
+    
+    <!-- Tombol Tambah Produk -->
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-xl font-semibold">Daftar Produk</h2>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">+ Tambah Produk</button>
+    </div>
+
+    <!-- Tabel Produk -->
+    <div class="overflow-x-auto bg-white rounded shadow">
+      <table class="min-w-full text-left">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="py-3 px-4">No</th>
+            <th class="py-3 px-4">Gambar</th>
+            <th class="py-3 px-4">Nama Produk</th>
+            <th class="py-3 px-4">Kategori</th>
+            <th class="py-3 px-4">Harga</th>
+            <th class="py-3 px-4">Status</th>
+            <th class="py-3 px-4">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Produk 1 -->
+          <tr class="border-b">
+            <td class="py-3 px-4">1</td>
+            <td class="py-3 px-4">
+              <img src="/img/crunch.png" alt="Crunchyroll" class="h-12 w-12 object-contain">
+             
+            </td>
+            <td class="py-3 px-4">Crunchyroll</td>
+            <td class="py-3 px-4">Streaming Apps</td>
+            <td class="py-3 px-4">Rp 10.000</td>
+            <td class="py-3 px-4 text-green-600">Tersedia</td>
+            <td class="py-3 px-4 space-x-1">
+              <button class="bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
+              <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
+            </td>
+          </tr>
+
+          <!-- Produk 2 -->
+          <tr class="border-b">
+            <td class="py-3 px-4">2</td>
+            <td class="py-3 px-4">
+              <img src="/img/netflix.png" alt="Netflix" class="h-12 w-12 object-contain">
+              
+            </td>
+            <td class="py-3 px-4">Netflix</td>
+            <td class="py-3 px-4">Streaming Apps</td>
+            <td class="py-3 px-4">Rp 40.000</td>
+            <td class="py-3 px-4 text-red-600">Habis</td>
+            <td class="py-3 px-4 space-x-1">
+              <button class="bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
+              <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
+            </td>
+          </tr>
+
+          <!-- Produk 3 -->
+          <tr class="border-b">
+            <td class="py-3 px-4">3</td>
+            <td class="py-3 px-4">
+              <img src="/img/movie box.png" alt="Movie Box" class="h-12 w-12 object-contain">
+              
+            </td>
+            <td class="py-3 px-4">Movie Box</td>
+            <td class="py-3 px-4">Streaming Apps</td>
+            <td class="py-3 px-4">Rp 6.000</td>
+            <td class="py-3 px-4 text-green-600">Tersedia</td>
+            <td class="py-3 px-4 space-x-1">
+              <button class="bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
+              <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
+            </td>
+          </tr>
+
+          <!-- Produk 4 -->
+          <tr class="border-b">
+            <td class="py-3 px-4">4</td>
+            <td class="py-3 px-4">
+              <img src="/img/prime.webp" alt="Prime Video" class="h-12 w-12 object-contain">
+            
+            </td>
+            <td class="py-3 px-4">Prime Video</td>
+            <td class="py-3 px-4">Streaming Apps</td>
+            <td class="py-3 px-4">Rp 15.000</td>
+            <td class="py-3 px-4 text-red-600">Habis</td>
+            <td class="py-3 px-4 space-x-1">
+              <button class="bg-yellow-400 text-white px-3 py-1 rounded hover:bg-yellow-500">Edit</button>
+              <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Hapus</button>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</body>
+</html>
